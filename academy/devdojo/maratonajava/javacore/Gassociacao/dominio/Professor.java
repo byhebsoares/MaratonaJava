@@ -3,10 +3,27 @@ package academy.devdojo.maratonajava.javacore.Gassociacao.dominio;
 public class Professor {
     private String nome;
     private String especialidade;
+    private Seminario[] seminario;
+
 
     public Professor(String nome) {
         this.nome = nome;
     }
+
+    public Professor(String nome, String especialidade, Seminario[] seminario) {
+        this.nome = nome;
+        this.especialidade = especialidade;
+        this.seminario = seminario;
+    }
+
+    public Seminario[] getSeminario() {
+        return seminario;
+    }
+
+    public void setSeminario(Seminario[] seminario) {
+        this.seminario = seminario;
+    }
+
     public String getNome() {
         return nome;
     }
