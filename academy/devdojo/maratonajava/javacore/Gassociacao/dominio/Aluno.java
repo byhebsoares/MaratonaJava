@@ -4,7 +4,10 @@ public class Aluno {
     private String nome;
     private int idade;
     private Seminario seminario;
-
+    public Aluno(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
     public String getNome() {
         return nome;
     }
@@ -13,10 +16,6 @@ public class Aluno {
         if(seminario != null){
             System.out.println("Titulo Seminário: " + seminario.getTitulo());
         }
-    }
-    public Aluno(String nome, int idade) {
-        this.nome = nome;
-        this.idade = idade;
     }
 
     public Seminario getSeminario() {

@@ -3,6 +3,7 @@ package academy.devdojo.maratonajava.javacore.Gassociacao.dominio;
 public class Seminario {
     private String titulo;
     private Aluno[] alunos;
+    private Local local;
     public Seminario(String titulo) {
         this.titulo = titulo;
     }
@@ -11,6 +12,21 @@ public class Seminario {
         this.titulo = titulo;
         this.alunos = alunos;
     }
+
+    public Seminario(String titulo, Aluno[] alunos, Local local) {
+        this.titulo = titulo;
+        this.alunos = alunos;
+        this.local = local;
+    }
+
+    public Local getLocal() {
+        return local;
+    }
+
+    public void setLocal(Local local) {
+        this.local = local;
+    }
+
     public void imprime(){
         System.out.println("Titulo seminário: " + this.titulo);
         if(alunos == null) return;

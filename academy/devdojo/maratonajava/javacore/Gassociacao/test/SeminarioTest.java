@@ -17,22 +17,23 @@ local: endereço
  */
 
 import academy.devdojo.maratonajava.javacore.Gassociacao.dominio.Aluno;
+import academy.devdojo.maratonajava.javacore.Gassociacao.dominio.Local;
 import academy.devdojo.maratonajava.javacore.Gassociacao.dominio.Professor;
 import academy.devdojo.maratonajava.javacore.Gassociacao.dominio.Seminario;
 
 public class SeminarioTest {
     public static void main(String[] args) {
-        Aluno aluno1 = new Aluno("Hebert",26);
-        Aluno aluno2 = new Aluno("crebsu",29);
-        Aluno[] alunos = {aluno1,aluno2};
+        Local local = new Local("Rua das laranjeiras");
+        Aluno aluno = new Aluno("Juraiton", 17);
+        Professor professor = new Professor("Barba Branca", "Pirata");
+        Aluno[] alunosParaSeminario = {aluno};
 
-        Seminario seminario1 = new Seminario("Espaço", alunos);
-        Seminario seminario2 = new Seminario("Matematica", alunos);
+        Seminario seminario = new Seminario("Onde achar one piece", alunosParaSeminario, local);
 
-        Seminario[] seminarios = {seminario1,seminario2};
+        Seminario[] seminariosDisponiveis = {seminario};
 
-        Professor professor = new Professor("Juraitu","Astrologia",seminarios);
-        seminario1.imprime();
+        professor.setSeminario(seminariosDisponiveis);
+        professor.imprime();
 
     }
 }
