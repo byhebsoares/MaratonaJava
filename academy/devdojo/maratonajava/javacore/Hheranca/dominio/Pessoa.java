@@ -10,6 +10,13 @@ public class Pessoa {
         System.out.println(this.cpf);
         System.out.println(this.endereco.getRua() + " " + this.endereco.getCep());
     }
+    public Pessoa (String nome){
+        this.nome = nome;
+    }
+    public Pessoa(String nome, String cpf){
+        this(nome);
+        this.cpf = cpf;
+    }
 
     public String getNome() {
         return nome;
