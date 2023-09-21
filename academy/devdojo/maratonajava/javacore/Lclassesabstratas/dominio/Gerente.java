@@ -17,4 +17,9 @@ public class Gerente extends Funcionario{
                 ", salario=" + salario +
                 '}';
     }
+
+    @Override
+    public void imprime() {
+
+    }
 }
