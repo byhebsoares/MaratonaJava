@@ -9,7 +9,7 @@ public class SobrescritaComExceptionTest01 {
         Pessoa pessoa = new Pessoa();
         Funcionario funcionario = new Funcionario();
         try {
-            funcionario.salvar(); 
+            funcionario.salvar();
         } catch (LoginInvalidoException e) {
             throw new RuntimeException(e);
         }
