@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Qstring.test;
 
-public class StringTest01 {
+public class StringPerformanceTest01 {
     public static void main(String[] args) {
         String nome = "Hebert";
         String nome2 = "Hebert 2";
