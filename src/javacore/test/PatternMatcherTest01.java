@@ -1,4 +1,4 @@
-package src.academy.devdojo.maratonajava.Uregex.test;
+package src.javacore.test;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
