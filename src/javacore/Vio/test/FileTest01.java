@@ -1,7 +1,12 @@
 package src.javacore.Vio.test;
 
 import java.io.File;
-import java.io.IOException;
+
+//File
+//FileWriter
+//FileReader
+//BufferedWriter
+//BufferedReader
 
 public class FileTest01 {
     public static void main(String[] args) {
