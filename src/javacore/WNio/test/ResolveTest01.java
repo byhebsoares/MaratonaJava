@@ -3,7 +3,7 @@ package src.javacore.WNio.test;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class PathTest03 {
+public class ResolveTest01 {
     public static void main(String[] args) {
         Path dir = Paths.get("home/Hebert");
         Path arquivo = Paths.get("dev/arquivo.txt");
